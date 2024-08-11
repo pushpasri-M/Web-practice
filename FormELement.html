@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="GET" >
+<!-Problem Statement:
+
+Make below observation(s) in the given code-snippet:
+
+Usage of various attributes in the input element.
+
+Observe the usage of form-override.
+
+Activity:
+
+Provide the "required" attribute for all the input elements.
+
+Change "autofocus" attribute from the contact input field to the email input field.
+
+Change the input field for job experience such that at least 3 years of experience is required to register.
+
+Provide the "placeholders" attributes for all the fields.
+
+Use the "novalidate" attribute for the form element and observe the form validations would be by-passed.
+
+Note: You can execute this tryout in your Visual Studio Code IDE or any other editor in case of any issue in executing/viewing response in the below-given pane.-->
+            <h4>Register Here to Get Job Offer Notifications</h4>
+            Username:<input type="text"  pattern="[A-Za-z]" autocomplete/> <br/><br/>
+            Password:<input type="password" required/> <br/><br/>
+            Email ID:<input type="email" autofocus/> <br/><br/>
+            Contact:<input type="number" placeholder="Enter your contact number here"/> <br/><br/>
+            Job Experience: <input type="number" min="2" max="10" step="0.5"><br/><br/>
+            Certificates:<input type="file" multiple /><br/><br/>
+            <input name="language" type="text" value="English" hidden>
+            <input type="submit" formmethod="POST"><br/>
+        </form>
+    </body>
+</html>
